@@ -13,23 +13,38 @@ public class EX14 {
         double altura = scanner.nextDouble();
 
         if (peso <= 0 && altura <= 0) {
+
             System.out.println("Peso e altura inválidos.");
+
         } else if (peso <= 0) {
+
             System.out.println("Peso inválido.");
+
         } else if (altura <= 0) {
+
             System.out.println("Altura inválida.");
+
         } else {
             double imc = peso / (altura * altura);
+
             System.out.println("Seu IMC é: " + imc);
 
             if (imc < 18.5) {
+
                 System.out.println("Você está abaixo do peso.");
+
             } else if (imc < 25) {
+
                 System.out.println("Você está com o peso normal.");
+
             } else if (imc < 30) {
+
                 System.out.println("Você está com sobrepeso.");
+
             } else {
+
                 System.out.println("Você está obeso.");
+                
             }
         }
 
